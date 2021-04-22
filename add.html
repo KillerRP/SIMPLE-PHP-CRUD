@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Staff</title>
+</head>
+
+<body>
+    <table>
+        <form action="add.php" method="post">
+            <tr>
+                <td> Name</td>
+                <td><input type="text" name="sname" required></td>
+            </tr>
+
+            <tr>
+                <td>Address </td>
+                <td><input type="textarea" name="address" required></td>
+            </tr>
+
+            <tr>
+                <td>Gender </td>
+                <td>Male<input type="radio" name="gender" value="male" required>
+                    Female <input type="radio" name="gender" value="female" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Designation </td>
+                <td> <input type="text" name="des" id="des" required></td>
+            </tr>
+
+            <tr>
+                <td>Location </td>
+                <td><select name="location" id="location">
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="pune">Pune</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="rajasthan">Rajasthan</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td>Date Of Joining</td>
+                <td> <input type="date" name="doj" id="doj" required></td>
+            </tr>
+
+            <tr>
+                <td>Salary </td>
+                <td><input type="text" name="salary" id="salary" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="submit" name="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
