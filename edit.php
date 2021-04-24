@@ -22,60 +22,94 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <title>Edit Info</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Edit | Staff</title>
 </head>
+
 <body>
-    <table>
+
+    <div class="container">
+
         <form method="post">
-            <tr>
-            <td> Name</td> 
-            <td><input type="text" name="sname" required></td>
-            </tr>
-            
-            <tr>
-            <td>Address </td> 
-            <td><input type="textarea" name="address" required></td>
-            </tr>
-            
-            <tr>
-            <td>Gender </td>
-            <td>Male<input type="radio" name="gender" value="male" required>
-                Female <input type="radio" name="gender" value="female" required>
-            </td>
-            </tr>
-    
-            <tr>
-            <td>Designation </td>
-            <td> <input type="text" name="des" id="des" required ></td>
-            </tr>
-    
-            <tr>
-            <td>Location </td> 
-            <td><select name="location" id="location">
-                <option value="ahmedabad">Ahmedabad</option>
-                <option value="pune">Pune</option>
-                <option value="delhi">Delhi</option>
-                <option value="chennai">Chennai</option>
-                <option value="rajasthan">Rajasthan</option>
-            </select></td>
-            </tr>
-    
-            <tr>
-            <td>Date Of Joining</td>
-            <td> <input type="date" name="doj" id="doj" required></td>
-            </tr>
-            
-            <tr><td>Salary </td>
-            <td><input type="text" name="salary" id="salary" required></td>
-            </tr>
-            
-            <tr>
-            <td><input type="submit" value="submit" name="submit"></td>
-            </tr>
+            <h1>Edit Staff</h1><br>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="sname" placeholder="Name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Address</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="address" rows="3"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                Gender
+                <div class="form-control">
+                    Male <input type="radio" name="gender" value="male" required>
+                    Female <input type="radio" name="gender" value="female" required>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Designation</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="des"
+                    placeholder="Designation" required>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Location</label>
+                <select class="form-control" name="location" id="exampleFormControlSelect1">
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="pune">Pune</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="rajasthan">Rajasthan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                Date Of Joining
+                <input type="date" class="form-control" name="doj" id="doj" required>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Salary</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="salary" placeholder="Salary"
+                    required>
+            </div>
+
+            <input class="btn btn-primary btn-lg btn-block" type="submit" name="submit" value="Submit">
+
+
         </form>
-        </table>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
